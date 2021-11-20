@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 /* PADDING */
@@ -28,4 +28,50 @@ h3 {
 
 p {
   padding-bottom: 1rem;
+}
+
+section {
+  height: 100vh;
+}
+
+section img {
+  height: 100%;
+}
+
+h3 {
+  text-align: center;
+  padding: 3rem;
+  &::before {
+    content: '{';
+    padding: 1rem;
+    visibility: hidden;
+  }
+  &::after {
+    content: '}';
+    padding: 1rem;
+    visibility: hidden;
+  }
+  &:hover {
+    &::after {
+      visibility: visible;
+    }
+    &::before {
+      visibility: visible;
+    }
+  }
+}
+
+::selection {
+  background: #01b7ff;
+  color: #eee;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(100deg, #3199f9, #39b7ff);
+  border-radius: 3rem;
 }
