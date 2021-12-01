@@ -46,8 +46,21 @@ a {
   color: #eee;
 }
 
-section {
-  height: 100vh;
+input,
+textarea {
+  border: 0.1rem #333 solid;
+  padding: 1rem 1.3rem;
+  border-radius: 0.3rem;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 10rem;
+  min-height: 10rem;
+  max-height: 35rem;
 }
 
 section img {
