@@ -36,6 +36,9 @@ header {
       a {
         margin: 0 2rem;
         padding: 1rem;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
@@ -102,9 +105,17 @@ section#contact {
     height: 100%;
     display: flex;
     align-items: center;
+  }
+}
+
+section#presentation,
+section#competences,
+section#contact {
+  > div {
     > article {
       flex: 4;
     }
+
     > div {
       flex: 5;
     }
@@ -224,6 +235,33 @@ section#experience {
 
 section#formation {
   background: linear-gradient(180deg, hsl(197, 100%, 32%), hsl(197, 100%, 25%));
+  > div {
+    display: flex;
+    flex-direction: column;
+    > div {
+      display: flex;
+      padding: 5rem;
+
+      .formation-details {
+        padding: 2rem;
+        > h4 {
+          padding-bottom: 1.5rem;
+        }
+      }
+    }
+    .chronologie {
+      flex: 1;
+      margin-right: 3rem;
+
+      .round {
+        background: url('../img/meta-logo-1.png') center no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+      }
+    }
+  }
 }
 
 section#contact {
