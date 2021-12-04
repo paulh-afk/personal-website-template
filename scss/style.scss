@@ -266,4 +266,20 @@ section#formation {
 
 section#contact {
   background: linear-gradient(180deg, hsl(197, 100%, 25%), hsl(204, 100%, 13%));
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    label {
+      padding-bottom: 0.5rem;
+    }
+  }
+  button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid #333;
+    border-radius: 0.3rem;
+    font-size: 1.8rem;
+    
+  }
 }
