@@ -275,11 +275,26 @@ section#contact {
     }
   }
   button {
+    font-family: 'Roboto', sans-serif;
     margin-top: 2rem;
     padding: 1rem 2rem;
     border: 1px solid #333;
     border-radius: 0.3rem;
     font-size: 1.8rem;
-    
+    background: #fff;
+  }
+}
+
+footer {
+  height: 20rem;
+  background: hsl(204, 100%, 13%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  i {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    font-size: 4rem;
   }
 }
